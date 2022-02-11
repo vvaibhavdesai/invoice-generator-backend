@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
   However you can replace this with anything as you
   wish
 */
-const authRoute = require("./routes/auth.route");
-const invoiceRoute = require("./routes/invoice.route");
+const authRoute = require("./routes/authRoute");
+const invoiceRoute = require("./routes/InvoiceRoute");
 app.use("/api/auth", authRoute);
 app.use("/api/invoices", invoiceRoute);
 
