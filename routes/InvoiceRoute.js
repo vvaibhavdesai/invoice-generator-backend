@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const { checkAuth } = require("../middlewares/checkAuth");
-const { getAll, createInvoice } = require("../controllers/Invoice");
+const { getAll, createInvoice } = require("../controllers/invoice");
 
 router.route("/all").get(checkAuth, getAll);
 router.route("/create").post(checkAuth, createInvoice);
