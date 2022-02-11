@@ -22,8 +22,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
   However you can replace this with anything as you
   wish
 */
-app.use("/api/auth", require("./routes/auth.route"));
-app.use("/api/invoices", require("./routes/invoice.route"));
+const authRoute = require("./routes/auth.route");
+const invoiceRoute = require("./routes/invoice.route");
+app.use("/api/auth", authRoute);
+app.use("/api/invoices", invoiceRoute);
 
 const PORT = process.env.PORT;
 
