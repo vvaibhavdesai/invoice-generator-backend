@@ -6,7 +6,7 @@
  * */
 const corsOptions = {
   //dont forget to add your domain in the array for frontend
-  origin: ["http://localhost:3000", "https://invoicegenerator-production.up.railway.app/"],
+  origin: ["http://localhost:3000", "https://invoicegenerator-production.up.railway.app"],
   optionsSuccessStatus: 200,
   credentials: true,
 };
